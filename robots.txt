@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://eason1388.github.io/sov1/sitemap.xml

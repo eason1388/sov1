@@ -1,15 +1,1 @@
-{
-  "name": "隨緣堂",
-  "short_name": "隨緣堂",
-  "start_url": "./index.html",
-  "display": "standalone",
-  "background_color": "#f6f3eb",
-  "theme_color": "#16362f",
-  "icons": [
-    {
-      "src": "assets/img/brand-mark.svg",
-      "sizes": "any",
-      "type": "image/svg+xml"
-    }
-  ]
-}
+{"name":"隨緣堂","short_name":"隨緣堂","start_url":"/sov1/","display":"standalone","background_color":"#080500","theme_color":"#080500"}
