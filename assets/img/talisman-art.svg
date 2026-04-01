@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 760" role="img" aria-label="藝術化符影">
+<defs>
+  <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#f4ecda"/>
+    <stop offset="100%" stop-color="#efe2c4"/>
+  </linearGradient>
+  <filter id="blurSoft"><feGaussianBlur stdDeviation="0.4"/></filter>
+</defs>
+<rect width="560" height="760" fill="#f7f2e8"/>
+<rect x="72" y="40" width="416" height="680" rx="20" fill="url(#paper)" stroke="#caa86c" stroke-width="4"/>
+<g filter="url(#blurSoft)" stroke="#b12424" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".7">
+  <path d="M276 92v92m-54-38h108m-145 82c48 15 100 20 154 15m-128 36c4 50 2 96-6 139m106-132c-15 24-22 59-21 106m-116 24c53 3 112-1 172-11m-173 65c43 18 89 24 138 19m-121 42v122m84-110c2 26 5 70 20 115m-150-78c57 9 112 8 184-5"/>
+  <path d="M194 288c22 21 43 21 66 0m18 183c18 18 40 21 68 9m-184 104c28 24 52 28 84 18"/>
+</g>
+<circle cx="280" cy="686" r="30" fill="#caa86c" opacity=".28"/>
+</svg>
