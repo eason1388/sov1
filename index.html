@@ -1,316 +1,328 @@
 <!DOCTYPE html>
-<html lang="zh-Hant-TW">
+<html lang="zh-TW">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>隨緣堂｜商業等級玄學品牌網站</title>
-  <meta name="description" content="提供收驚、祭改、陰陽調和與道家修行內容，適合部署於 GitHub Pages 的完整商業級網站。">
-  <meta name="theme-color" content="#16362f">
-  <meta property="og:title" content="隨緣堂｜商業等級玄學品牌網站">
-  <meta property="og:description" content="提供收驚、祭改、陰陽調和與道家修行內容，適合部署於 GitHub Pages 的完整商業級網站。">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>隨緣堂｜道家玄學・修行・祭改・收驚</title>
+  <meta name="description" content="隨緣堂提供道家修行、祭改、收驚、符咒知識與靈性諮詢服務。以修為為本，濟世為用，協助個人回歸安定與清明。">
+  <meta name="keywords" content="收驚,祭改,符咒,道家修行,玄學,陰陽調和,靈性諮詢">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="隨緣堂｜道家玄學・修行・祭改・收驚">
+  <meta property="og:description" content="修為為本，濟世為用。道家修行、祭改、收驚與符咒知識的整合平台。">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/img/og-cover.svg">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="assets/img/brand-mark.svg" type="image/svg+xml">
-  <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="assets/css/styles.css">
-  
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Organization",
-    "name":"隨緣堂",
-    "url":"https://your-account.github.io/suiyuantang/",
-    "logo":"assets/img/brand-mark.svg",
-    "email":"hello@example.com",
-    "telephone":"+886-900-000-000",
-    "description":"提供收驚、祭改、陰陽調和與道家修行內容，強調修為為本、濟世為用。"
-  }
-  </script>
-
+  <meta property="og:url" content="https://eason1388.github.io/sov1/">
+  <meta name="theme-color" content="#0b0703">
+  <link rel="canonical" href="https://eason1388.github.io/sov1/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;700;900&family=Noto+Sans+TC:wght@300;400;500;700&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0703; --bg2:#130c05; --panel:#171007; --line:rgba(212,144,8,.28);
+      --gold:#d9a441; --gold2:#f0c768; --text:#ead8b6; --muted:#b89d73; --red:#b72913; --red2:#8b1f0f;
+      --green:#235f3c; --shadow:0 20px 50px rgba(0,0,0,.38);
+      --max:1200px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:radial-gradient(circle at top,#1a1005 0,#0b0703 45%,#070401 100%);color:var(--text);font-family:'Noto Serif TC',serif;line-height:1.9}
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%;display:block}
+    .wrap{width:min(var(--max),92vw);margin:auto}
+    .nav{position:sticky;top:0;z-index:50;background:rgba(11,7,3,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+    .nav .wrap{display:flex;justify-content:space-between;align-items:center;padding:14px 0;gap:20px}
+    .brand{display:flex;align-items:center;gap:14px}
+    .brand-mark{width:42px;height:42px;border:1px solid rgba(240,199,104,.6);border-radius:50%;display:grid;place-items:center;color:var(--gold2);font-size:18px;box-shadow:0 0 20px rgba(240,199,104,.15) inset}
+    .brand-name{font-family:'Ma Shan Zheng',cursive;font-size:2rem;color:var(--gold2);letter-spacing:.08em}
+    .nav-links{display:flex;gap:24px;align-items:center;font-family:'Noto Sans TC',sans-serif;font-size:.95rem;color:var(--muted)}
+    .nav-links a:hover{color:var(--gold2)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 26px;border-radius:999px;font-family:'Noto Sans TC',sans-serif;font-size:.95rem;letter-spacing:.15em;transition:.25s}
+    .btn-primary{background:linear-gradient(135deg,var(--red),var(--red2));color:#fff;box-shadow:0 10px 25px rgba(183,41,19,.28)}
+    .btn-primary:hover{transform:translateY(-2px)}
+    .btn-secondary{border:1px solid rgba(240,199,104,.35);color:var(--gold2);background:rgba(255,255,255,.02)}
+    .btn-secondary:hover{background:rgba(240,199,104,.08)}
+    .hero{position:relative;overflow:hidden}
+    .hero::before,.hero::after{content:"";position:absolute;inset:auto;width:42vw;height:42vw;border-radius:50%;filter:blur(90px);pointer-events:none}
+    .hero::before{top:-18vw;left:-10vw;background:rgba(183,41,19,.14)}
+    .hero::after{right:-12vw;top:4vw;background:rgba(217,164,65,.1)}
+    .hero .wrap{display:grid;grid-template-columns:1.08fr .92fr;gap:42px;align-items:center;padding:78px 0 56px}
+    .eyebrow{font-family:'Noto Sans TC',sans-serif;color:var(--gold);letter-spacing:.35em;font-size:.82rem;text-transform:uppercase}
+    .hero h1{font-family:'Ma Shan Zheng',cursive;font-size:clamp(4rem,10vw,8rem);line-height:.95;margin:18px 0 10px;color:#f7ead1;text-shadow:0 8px 40px rgba(0,0,0,.35)}
+    .hero .sub{font-family:'Noto Sans TC',sans-serif;color:var(--gold);letter-spacing:.5em;font-size:1rem;margin-bottom:22px}
+    .hero p{font-size:1.15rem;color:var(--text);max-width:42rem}
+    .hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+    .hero-card{background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.01));border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+    .hero-card::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(240,199,104,.08),transparent 42%,rgba(35,95,60,.08));pointer-events:none}
+    .taiqi{aspect-ratio:1/1;max-width:420px;margin:0 auto;border-radius:50%;display:grid;place-items:center;position:relative}
+    .taiqi::before{content:"";position:absolute;inset:0;border-radius:50%;border:1px dashed rgba(240,199,104,.28);animation:spin 32s linear infinite}
+    .taiji-core{width:72%;aspect-ratio:1;border-radius:50%;background:conic-gradient(from 180deg,#111 0 50%,#b78632 50% 100%);position:relative;box-shadow:0 0 40px rgba(240,199,104,.16), inset 0 0 24px rgba(0,0,0,.35)}
+    .taiji-core::before,.taiji-core::after{content:"";position:absolute;left:50%;transform:translateX(-50%);width:50%;aspect-ratio:1;border-radius:50%}
+    .taiji-core::before{top:0;background:#111}
+    .taiji-core::after{bottom:0;background:#b78632}
+    .taiji-dot1,.taiji-dot2{position:absolute;left:50%;transform:translateX(-50%);width:12%;aspect-ratio:1;border-radius:50%}
+    .taiji-dot1{top:25%;background:#b78632}
+    .taiji-dot2{bottom:25%;background:#111}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:24px}
+    .stat{text-align:center;padding:22px 10px;background:rgba(255,255,255,.015)}
+    .stat b{display:block;font-family:'Ma Shan Zheng',cursive;font-size:2.2rem;color:var(--gold2);margin-bottom:4px}
+    .stat span{font-family:'Noto Sans TC',sans-serif;font-size:.85rem;color:var(--muted);letter-spacing:.2em}
+    .marquee{overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#090502}
+    .marquee-track{display:flex;min-width:max-content;animation:marq 28s linear infinite}
+    .marquee span{padding:16px 40px;color:var(--gold);font-family:'Ma Shan Zheng',cursive;font-size:1.3rem;white-space:nowrap}
+    @keyframes marq{to{transform:translateX(-50%)}}
+    section{padding:82px 0}
+    .section-head{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:end;margin-bottom:34px}
+    .section-head h2{font-family:'Ma Shan Zheng',cursive;font-size:clamp(2.5rem,5vw,4.3rem);line-height:1.1;margin:.2em 0;color:#f6e8ce}
+    .section-head p{color:var(--muted);font-size:1.06rem}
+    .cards-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.012));border:1px solid var(--line);border-radius:26px;padding:28px;box-shadow:var(--shadow)}
+    .channel h3,.article h3,.service h3,.seo h3{font-family:'Ma Shan Zheng',cursive;font-size:2rem;color:#f6e8ce;margin:.2em 0}
+    .channel small,.article small,.service small,.seo small{display:block;color:var(--gold);font-family:'Noto Sans TC',sans-serif;letter-spacing:.2em;margin-bottom:14px}
+    .channel p,.article p,.service p,.seo p{color:var(--muted)}
+    .channel .go,.article .go{display:inline-block;margin-top:14px;color:var(--gold2);font-family:'Noto Sans TC',sans-serif;letter-spacing:.15em}
+    .dual{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+    .service-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+    .service{position:relative;overflow:hidden}
+    .service::after{content:"";position:absolute;inset:auto -40px -40px auto;width:120px;height:120px;background:radial-gradient(circle,rgba(240,199,104,.16),transparent 70%)}
+    .consult{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+    .contact-box{background:linear-gradient(180deg,rgba(183,41,19,.08),rgba(255,255,255,.02));border:1px solid rgba(183,41,19,.26)}
+    .contact-box a{color:var(--gold2);word-break:break-all}
+    form{display:grid;gap:16px}
+    label{font-family:'Noto Sans TC',sans-serif;color:var(--muted);font-size:.9rem;letter-spacing:.12em}
+    input,select,textarea{width:100%;padding:15px 16px;border-radius:16px;border:1px solid rgba(240,199,104,.2);background:#0e0904;color:var(--text);font:inherit}
+    textarea{min-height:140px;resize:vertical}
+    .note{font-size:.92rem;color:var(--muted)}
+    .seo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .footer{border-top:1px solid var(--line);padding:32px 0 56px;color:var(--muted);font-family:'Noto Sans TC',sans-serif;font-size:.92rem}
+    .footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    .reveal{opacity:0;transform:translateY(26px);transition:all .7s ease}
+    .reveal.on{opacity:1;transform:none}
+    @media (max-width:1000px){
+      .hero .wrap,.section-head,.consult,.dual,.service-grid,.seo-grid,.cards-3{grid-template-columns:1fr}
+      .stats{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:760px){
+      .nav .wrap{padding:12px 0}.nav-links{display:none}.hero .wrap{padding-top:56px}
+      .hero p{font-size:1rem}.stats{grid-template-columns:1fr 1fr}.btn{width:100%}.hero-actions{display:grid}
+      section{padding:62px 0}.card{padding:22px}.brand-name{font-size:1.7rem}
+    }
+  </style>
 </head>
 <body>
-  <a class="skip-link" href="#main">跳到主要內容</a>
-  
-<header class="site-header">
-  <div class="container header-row">
-    <a href="index.html" class="brand" aria-label="隨緣堂 首頁">
-      <img src="assets/img/brand-mark.svg" alt="隨緣堂 標誌" class="brand-mark">
+  <nav class="nav">
+    <div class="wrap">
+      <a href="index.html" class="brand" aria-label="隨緣堂首頁">
+        <span class="brand-mark">☯</span>
+        <span class="brand-name">隨緣堂</span>
+      </a>
+      <div class="nav-links">
+        <a href="#channels">三大頻道</a>
+        <a href="articles.html">修行文苑</a>
+        <a href="talisman.html">符咒百科</a>
+        <a href="#consult" class="btn btn-primary">預約諮詢</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap">
       <div>
-        <span class="brand-title">隨緣堂</span>
-        <span class="brand-sub">修為為體・濟世為用・冥陽兩利</span>
-      </div>
-    </a>
-
-    <button class="nav-toggle" aria-label="開啟選單" aria-expanded="false" aria-controls="site-nav">
-      <span></span><span></span><span></span>
-    </button>
-
-    <nav id="site-nav" class="site-nav" aria-label="主要選單">
-      <a href="index.html" class="nav-link is-active">首頁</a>
-<a href="practice.html" class="nav-link">修行養氣</a>
-<a href="services.html" class="nav-link">服務項目</a>
-<a href="talisman.html" class="nav-link">符咒小百科</a>
-<a href="articles.html" class="nav-link">專欄文章</a>
-<a href="about.html" class="nav-link">關於我們</a>
-<a href="contact.html" class="nav-link">預約諮詢</a>
-      <a href="contact.html" class="btn btn-primary nav-cta">立即諮詢</a>
-    </nav>
-  </div>
-</header>
-
-  <main id="main">
-    
-<section class="hero hero-home">
-  <div class="container hero-grid">
-    <div class="hero-copy">
-      <span class="eyebrow">道家修行 × 民俗服務 × 理性玄學</span>
-      <h1>建立一個有公信力的玄學品牌，從修心養氣到濟世解厄。</h1>
-      <p class="lead">隨緣堂以「內功修行（理）」與「方術濟世（事）」並重，強調先辨識身心狀況，再評估是否需要民俗輔助，讓現代人也能安心理解道家文化的深度與邏輯。</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="contact.html">預約初步諮詢</a>
-        <a class="btn btn-secondary" href="services.html">查看服務內容</a>
-      </div>
-      <ul class="trust-list">
-        <li>先看醫學，再看玄學</li>
-        <li>清楚說明流程、禁忌與費用欄位</li>
-        <li>支援 GitHub Pages 靜態部署</li>
-      </ul>
-    </div>
-    <div class="hero-visual">
-      <img src="assets/img/hero-scene.svg" alt="山巒、日月與靜坐意象插畫">
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">品牌架構</span>
-      <h2>三大核心頻道</h2>
-      <p>網站以「體、用、度」三層次呈現：先建立修行高度，再提供實務服務，最後處理需要更審慎看待的特殊議題。</p>
-    </div>
-    <div class="feature-grid">
-      <article class="feature-card">
-        <span class="feature-kicker">體</span>
-        <h3>清靜經緯｜內功與修行</h3>
-        <p>氣脈養生、靜坐吐納、四時調養、丹道初探，面向想提升身心穩定與修養深度的讀者。</p>
-        <a href="practice.html">了解修行養氣 →</a>
-      </article>
-      <article class="feature-card">
-        <span class="feature-kicker">用</span>
-        <h3>法露恩光｜祭改與收驚</h3>
-        <p>針對驚嚇、流年不順、家宅不安、祈福延壽等需求，提供理性說明、服務流程與配套提醒。</p>
-        <a href="services.html">查看實務服務 →</a>
-      </article>
-      <article class="feature-card">
-        <span class="feature-kicker">度</span>
-        <h3>幽冥通牒｜陰陽與特別問題</h3>
-        <p>以嚴謹、克制的方式談冤親債主、陰陽失衡、宅居淨化與疑難個案，避免渲染與驚嚇式敘事。</p>
-        <a href="articles.html#yinyang">閱讀專欄分析 →</a>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="section section-alt">
-  <div class="container split-grid">
-    <div>
-      <div class="section-head left">
-        <span class="eyebrow">服務定位</span>
-        <h2>商業等級網站該具備的信任感</h2>
-      </div>
-      <div class="principle-list">
-        <div class="principle-item">
-          <h3>專業免責與倫理</h3>
-          <p>於首頁、預約頁與服務頁顯眼揭示：玄學服務屬心靈慰藉與能量輔助，身體或心理不適應優先就醫或求助專業人員。</p>
+        <div class="eyebrow">SUIYUANTANG · 道家修行與濟世</div>
+        <h1>隨緣堂</h1>
+        <div class="sub">修為為體・濟世為用</div>
+        <p>以修行養氣為根本，以祭改、收驚、陰陽調理為實務助緣。隨緣堂整合道家玄理、符咒知識與靈性諮詢，提供一個兼顧深度、信任感與現代閱讀體驗的完整平台。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#consult">立即預約諮詢</a>
+          <a class="btn btn-secondary" href="articles.html">閱讀修行文章</a>
         </div>
-        <div class="principle-item">
-          <h3>公開流程與收費欄位</h3>
-          <p>讓使用者知道從初步填表、判斷需求、安排遠距或實體服務，到後續回饋的整體步驟，降低不安感。</p>
-        </div>
-        <div class="principle-item">
-          <h3>內容行銷與 SEO</h3>
-          <p>結合「收驚原理、祭改流程、陰陽調和、道家靜坐」等主題長文，兼顧教育與轉換。</p>
+      </div>
+      <div class="hero-card reveal">
+        <div class="taiqi" aria-hidden="true">
+          <div class="taiji-core">
+            <div class="taiji-dot1"></div>
+            <div class="taiji-dot2"></div>
+          </div>
         </div>
       </div>
     </div>
-    <aside class="quote-panel">
-      <h3>今日法語</h3>
-      <blockquote id="daily-quote">載入中…</blockquote>
-      <p id="daily-quote-source" class="quote-source"></p>
-      <button class="btn btn-ghost" id="new-quote-btn" type="button">換一句</button>
-    </aside>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">精選服務</span>
-      <h2>把使用者最常問的需求整理成清楚入口</h2>
+    <div class="wrap stats reveal">
+      <div class="stat"><b>修</b><span>修行養氣</span></div>
+      <div class="stat"><b>解</b><span>祭改解厄</span></div>
+      <div class="stat"><b>安</b><span>收驚安神</span></div>
+      <div class="stat"><b>和</b><span>陰陽調和</span></div>
     </div>
-    <div class="service-grid">
-      <article class="service-card">
-        <h3>收驚安神</h3>
-        <p>適合受驚後睡眠不安、心悸、莫名恐懼者。以民俗角度理解「魂魄不寧」，並搭配安神建議與生活提醒。</p>
-        <ul>
-          <li>遠距／實體皆可</li>
-          <li>事前問答表單</li>
-          <li>附安神小撇步</li>
-        </ul>
-      </article>
-      <article class="service-card">
-        <h3>祭改解厄</h3>
-        <p>針對流年不利、口舌是非、工作阻滯等常見問題，先從生辰資訊與生活現況理解，再安排適合的科儀輔助。</p>
-        <ul>
-          <li>流程公開透明</li>
-          <li>不保證神效、不恐嚇推銷</li>
-          <li>重視後續修心修行</li>
-        </ul>
-      </article>
-      <article class="service-card">
-        <h3>家宅淨化</h3>
-        <p>當空間長期潮濕、壓抑、爭執頻繁或睡眠品質下降時，先從採光、通風、作息與環境整理開始，再評估淨化需求。</p>
-        <ul>
-          <li>先環境，後民俗</li>
-          <li>提供居家調整建議</li>
-          <li>可搭配祭改／安神</li>
-        </ul>
-      </article>
-      <article class="service-card">
-        <h3>修行入門指引</h3>
-        <p>提供五分鐘靜心法、呼吸吐納原則、初學者禁忌與修行觀念，幫助讀者把焦點放回身心秩序。</p>
-        <ul>
-          <li>適合初學者</li>
-          <li>可作為課程引流</li>
-          <li>建立高價值內容品牌</li>
-        </ul>
-      </article>
+  </header>
+
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>道可道，非常道</span><span>上善若水，水善利萬物</span><span>知人者智，自知者明</span><span>致虛極，守靜篤</span><span>天之道，利而不害</span><span>道生一，一生二，二生三，三生萬物</span>
+      <span>道可道，非常道</span><span>上善若水，水善利萬物</span><span>知人者智，自知者明</span><span>致虛極，守靜篤</span><span>天之道，利而不害</span><span>道生一，一生二，二生三，三生萬物</span>
     </div>
   </div>
-</section>
 
-<section class="section section-alt">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">長文內容</span>
-      <h2>首頁就能看見你的專業深度</h2>
-      <p>這些文章已預先鋪好重點關鍵字與敘事角度，能直接作為品牌專欄與搜尋入口。</p>
-    </div>
-    <div class="article-list">
-      <article class="article-card">
-        <span class="article-tag">修行</span>
-        <h3>玄門養氣：為何「氣」是修行者的生命之本？</h3>
-        <p>從「聚精、會神、養氣」談到每日十五分鐘靜坐，幫讀者理解養氣的核心不是求神通，而是重建生命穩定度。</p>
-        <a href="articles.html#yangqi">閱讀全文 →</a>
-      </article>
-      <article class="article-card">
-        <span class="article-tag">祭改</span>
-        <h3>祭改並非迷信：淺談時空能量的撥亂反正</h3>
-        <p>用現代語言解釋「煞」與不協調頻率，說明祭改後仍需存好心、行好事，才有機會長期維持改運效果。</p>
-        <a href="articles.html#jigai">閱讀全文 →</a>
-      </article>
-      <article class="article-card">
-        <span class="article-tag">收驚</span>
-        <h3>魂魄的安寧：為什麼小孩與大人都需要收驚？</h3>
-        <p>連結民俗與神經系統失調的雙重觀點，避免把所有身心症狀直接歸因於靈異事件。</p>
-        <a href="articles.html#shoujing">閱讀全文 →</a>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container split-grid">
-    <div>
-      <div class="section-head left">
-        <span class="eyebrow">案例研究</span>
-        <h2>用理性方式建立公信力</h2>
-      </div>
-      <div class="case-stack">
-        <article class="case-card">
-          <h3>示意案例 A｜長期失眠與驚嚇後反覆作夢</h3>
-          <p>先建議就醫排除身心科與睡眠障礙；在醫療檢查無重大異常後，再輔以收驚安神與居家睡前儀式，三週後回報入睡焦慮明顯降低。</p>
-        </article>
-        <article class="case-card">
-          <h3>示意案例 B｜搬家後家人情緒起伏與爭吵</h3>
-          <p>先從採光、動線、收納、濕氣與作息著手，再安排家宅淨化與祭改。重點不是神化過程，而是讓空間重新恢復秩序與流動感。</p>
-        </article>
-      </div>
-      <p class="muted">以上為綜合型常見情境示意，目的在說明判斷邏輯與服務原則，不代表對所有人產生相同結果。</p>
-    </div>
-    <div class="faq-panel">
-      <div class="section-head left">
-        <span class="eyebrow">常見問題</span>
-        <h2>商業網站必備 FAQ</h2>
-      </div>
-      <div class="faq-list">
-        <details>
-          <summary>玄學服務可以取代醫療嗎？</summary>
-          <p>不可以。若有身體或心理不適，請優先就醫。本站所有內容與服務都應視為民俗文化、心靈支持與儀式輔助。</p>
-        </details>
-        <details>
-          <summary>遠距收驚或祭改可以嗎？</summary>
-          <p>可提供遠距形式，但會依個案狀況評估，並清楚說明流程、限制與建議。若情況複雜，仍可能建議實體處理或轉介其他資源。</p>
-        </details>
-        <details>
-          <summary>符咒是不是越多越好？</summary>
-          <p>不是。符咒是輔助，不是囤積。核心仍在法、墨、神與使用者心念、生活秩序、後續修心是否相應。</p>
-        </details>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section cta-band">
-  <div class="container cta-row">
-    <div>
-      <span class="eyebrow">開始轉換</span>
-      <h2>把這個網站放上 GitHub Pages，就能成為你的品牌母站。</h2>
-      <p>你可以再串接表單、GA4、Search Console 與自訂網域，作為長期經營的內容與預約中心。</p>
-    </div>
-    <a class="btn btn-primary btn-large" href="contact.html">前往預約諮詢頁</a>
-  </div>
-</section>
-
-  </main>
-  
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <div>
-      <div class="footer-brand">
-        <img src="assets/img/brand-mark.svg" alt="" class="brand-mark brand-mark-footer">
+  <section id="channels">
+    <div class="wrap">
+      <div class="section-head">
         <div>
-          <strong>隨緣堂</strong>
-          <p>修為為體・濟世為用・冥陽兩利</p>
+          <div class="eyebrow">THREE CHANNELS · 三大頻道</div>
+          <h2>法脈三途<br>引領修行</h2>
+        </div>
+        <p>首頁先講清楚「修行」、「法事」、「陰陽調和」三個主軸，讓第一次進站的人馬上知道你在做什麼，也讓 Google 更容易理解網站內容結構。</p>
+      </div>
+      <div class="cards-3">
+        <a class="card channel reveal" href="articles.html">
+          <small>01 · CULTIVATION</small>
+          <h3>清靜經緯</h3>
+          <p>聚焦內功修行、呼吸吐納、陰陽五行、打坐養氣與道家哲理，建立網站的深度與公信力。</p>
+          <span class="go">進入修行文苑 →</span>
+        </a>
+        <a class="card channel reveal" href="talisman.html">
+          <small>02 · RITUAL ARTS</small>
+          <h3>法露恩光</h3>
+          <p>整理祭改、收驚、護身、祈福等主題，讓讀者理解服務方向與基本原理，不走恐嚇路線。</p>
+          <span class="go">進入符咒百科 →</span>
+        </a>
+        <div class="card channel reveal">
+          <small>03 · YIN-YANG BALANCE</small>
+          <h3>幽冥通牒</h3>
+          <p>以理性角度談陰陽失衡、家宅不安、冤親債主與靈性困擾，強調先醫後玄、先穩定再處理。</p>
+          <span class="go">首頁內容整合展示</span>
         </div>
       </div>
-      <p class="muted">以清靜修心為本，以理性服務為用。網站內容屬民俗文化、心靈支持與能量調理資訊，不替代醫療、心理治療或法律建議。</p>
     </div>
-    <div>
-      <h3>網站導覽</h3>
-      <ul class="footer-links">
-        <li><a href="index.html">首頁</a></li><li><a href="practice.html">修行養氣</a></li><li><a href="services.html">服務項目</a></li><li><a href="talisman.html">符咒小百科</a></li><li><a href="articles.html">專欄文章</a></li><li><a href="about.html">關於我們</a></li><li><a href="contact.html">預約諮詢</a></li>
-        <li><a href="privacy.html">隱私與免責</a></li>
-      </ul>
-    </div>
-    <div>
-      <h3>聯絡資訊</h3>
-      <ul class="footer-links">
-        <li><a href="mailto:hello@example.com">hello@example.com</a></li>
-        <li><a href="tel:+886-900-000-000">0900-000-000</a></li>
-        <li>LINE：@your-line-id</li>
-        <li>服務地區：線上諮詢 / 台灣實體預約</li>
-      </ul>
-    </div>
-  </div>
-  <div class="container footer-bottom">
-    <small>© 2026 隨緣堂. All rights reserved.</small>
-    <small>建議部署於 GitHub Pages，並可串接 Formspree、Google Analytics、Search Console。</small>
-  </div>
-</footer>
+  </section>
 
-  <script src="assets/js/site.js"></script>
+  <section>
+    <div class="wrap dual">
+      <div class="card reveal">
+        <div class="eyebrow">FEATURED ARTICLE · 內容導流</div>
+        <h2 style="font-family:'Ma Shan Zheng',cursive;font-size:2.8rem;line-height:1.2;margin:.2em 0;">從養氣開始<br>讓修行落地</h2>
+        <p>修行不是抽象口號，而是從呼吸、作息、心念與身體感受開始。若網站內容能先讓讀者感到安定與被理解，再引導至諮詢服務，轉換率會比一開始就推銷更高。</p>
+        <div style="margin-top:18px"><a class="btn btn-secondary" href="articles.html">查看完整文章與案例</a></div>
+      </div>
+      <div class="card reveal">
+        <div class="eyebrow">DAILY WISDOM · 每日法語</div>
+        <blockquote id="quoteText" style="font-family:'Ma Shan Zheng',cursive;font-size:2.1rem;line-height:1.7;color:#f6e8ce;margin:0 0 12px"></blockquote>
+        <p id="quoteSrc" class="note"></p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">SERVICES · 實務服務</div>
+          <h2>可直接接案的<br>服務版塊</h2>
+        </div>
+        <p>這一區已經把商業化需要的服務入口放好。之後你要發文章、做廣告、放社群連結，都可以直接導回這裡。</p>
+      </div>
+      <div class="service-grid">
+        <div class="card service reveal"><small>RITUAL</small><h3>祭改解厄</h3><p>針對流年不順、五行失衡、長期阻滯感，提供儀式方向與實務說明。</p></div>
+        <div class="card service reveal"><small>HEALING</small><h3>收驚安神</h3><p>從心神不寧、驚嚇後失眠、情緒飄忽等角度切入，先安神再判斷是否需要進一步處理。</p></div>
+        <div class="card service reveal"><small>PROTECTION</small><h3>護身與祈福</h3><p>護身、平安、祈福、淨化相關知識與應用方向整理成清楚頁面，提升信任感。</p></div>
+        <div class="card service reveal"><small>ENVIRONMENT</small><h3>陰陽調和</h3><p>家宅不安、空間壓迫感、陰陽失調等主題，提供理性解說與諮詢入口。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">SEO & FLOW · 自動流量架構</div>
+          <h2>網站已含 SEO 基礎<br>適合持續發文章</h2>
+        </div>
+        <p>這個版本已經幫你把首頁標題、描述、關鍵字、canonical、robots 與 sitemap 架好。接下來只要穩定新增文章，Google 才會慢慢收錄與排名。</p>
+      </div>
+      <div class="seo-grid">
+        <div class="card seo reveal"><small>SEO 01</small><h3>關鍵字</h3><p>首頁已放入收驚、祭改、符咒、道家修行、陰陽調和等核心關鍵字。</p></div>
+        <div class="card seo reveal"><small>SEO 02</small><h3>收錄</h3><p>已附 robots.txt 與 sitemap.xml，方便搜尋引擎理解網站頁面結構。GitHub Pages 可正常被收錄。 </p></div>
+        <div class="card seo reveal"><small>SEO 03</small><h3>導流</h3><p>首頁、文章頁、符咒頁彼此互相連結，對 SEO 與使用者停留時間都比較有利。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="consult">
+    <div class="wrap consult">
+      <div>
+        <div class="section-head" style="grid-template-columns:1fr;gap:8px;margin-bottom:20px">
+          <div class="eyebrow">CONSULTATION · 預約諮詢</div>
+          <h2>表單已可直接寄到 Gmail</h2>
+        </div>
+        <div class="card contact-box reveal">
+          <h3 style="font-family:'Ma Shan Zheng',cursive;font-size:2rem;margin-top:0;color:#f6e8ce">聯絡方式</h3>
+          <p style="margin:0">Email：<a href="mailto:jackkok1388@gmail.com">jackkok1388@gmail.com</a></p>
+          <p class="note" style="margin-top:12px">表單使用 FormSubmit 串接。第一次送出後，系統會寄一封啟用信到你的 Gmail。你只要去信箱點一次確認，之後網站表單就會正式開始收件。FormSubmit 提供這種免後端 HTML 表單收件方式。 citeturn773611search0turn773611search1turn773611search5</p>
+        </div>
+      </div>
+      <div class="card reveal">
+        <form action="https://formsubmit.co/jackkok1388@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="隨緣堂網站新諮詢">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://eason1388.github.io/sov1/?sent=1#consult">
+          <label>姓名
+            <input type="text" name="姓名" placeholder="請輸入姓名" required>
+          </label>
+          <label>Email
+            <input type="email" name="email" placeholder="請輸入你的 Email" required>
+          </label>
+          <label>諮詢類別
+            <select name="諮詢類別" required>
+              <option value="">請選擇</option>
+              <option>祭改解厄</option>
+              <option>收驚安神</option>
+              <option>護身祈福</option>
+              <option>陰陽調和</option>
+              <option>修行與養氣</option>
+              <option>其他問題</option>
+            </select>
+          </label>
+          <label>問題描述
+            <textarea name="問題描述" placeholder="請簡單描述目前情況，越清楚越好。" required></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">送出諮詢</button>
+          <p class="note">表單欄位都有 name 屬性，這樣提交內容才會完整寄到你的信箱；FormSubmit 文件也明確提到這一點。 citeturn773611search0turn773611search5</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap">
+      <span>© 2026 隨緣堂 · 道家玄學網站</span>
+      <span>聯絡信箱：jackkok1388@gmail.com</span>
+    </div>
+  </footer>
+
+  <script>
+    const quotes = [
+      ['致虛極，守靜篤，萬物並作，吾以觀復。','《道德經》第十六章'],
+      ['上善若水，水善利萬物而不爭。','《道德經》第八章'],
+      ['知人者智，自知者明；勝人者有力，自勝者強。','《道德經》第三十三章'],
+      ['天之道，利而不害；聖人之道，為而不爭。','《道德經》第八十一章']
+    ];
+    const picked = quotes[Math.floor(Math.random()*quotes.length)];
+    document.getElementById('quoteText').textContent = picked[0];
+    document.getElementById('quoteSrc').textContent = '—— ' + picked[1];
+
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) entry.target.classList.add('on');
+      });
+    }, {threshold: .1});
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+    const sent = new URLSearchParams(location.search).get('sent');
+    if (sent === '1') {
+      const msg = document.createElement('div');
+      msg.textContent = '表單已送出。若這是第一次使用，請到 jackkok1388@gmail.com 收啟用信並完成確認。';
+      msg.style.cssText = 'position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:#1d1208;color:#f6e8ce;border:1px solid rgba(240,199,104,.35);padding:14px 18px;border-radius:14px;z-index:99;box-shadow:0 10px 30px rgba(0,0,0,.3);font-family:"Noto Sans TC",sans-serif;max-width:min(92vw,720px)';
+      document.body.appendChild(msg);
+      setTimeout(()=>msg.remove(),7000);
+    }
+  </script>
 </body>
 </html>

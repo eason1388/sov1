@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://your-account.github.io/suiyuantang/sitemap.xml
+Sitemap: https://eason1388.github.io/sov1/sitemap.xml
